@@ -1,0 +1,69 @@
+rules:
+  - id: R001
+    name: Brute Force Attack
+    severity: CRITICAL
+    type: brute_force
+    condition:
+      eventName: ConsoleLogin
+      response: Failure
+      count: 5
+      time_window_minutes: 5
+    mitre_attack: "T1110 - Brute Force"
+    recommendation: "Verify the account owner, review related login activity, and consider account protection measures."
+
+  - id: R002
+    name: Cloud Resource Enumeration
+    severity: HIGH
+    type: enumeration
+    condition:
+      count: 4
+      time_window_minutes: 10
+      min_distinct_event_types: 3
+    mitre_attack: "T1580 - Cloud Infrastructure Discovery"
+    recommendation: "Confirm that discovery activity matches the actor's role and expected tasks."
+
+  - id: R003
+    name: Unusual Source IP
+    severity: HIGH
+    type: unusual_access
+    condition:
+      eventName: ConsoleLogin
+      trusted_cidrs:
+        - 10.0.0.0/8
+        - 192.168.0.0/16
+        - 127.0.0.0/8
+    mitre_attack: "T1078 - Valid Accounts"
+    recommendation: "Verify the source IP and review related authentication events."
+
+  - id: R004
+    name: Privilege Escalation or IAM Change
+    severity: CRITICAL
+    type: privilege_escalation
+    condition:
+      event_names:
+        - AttachUserPolicy
+        - PutRolePolicy
+        - CreateAccessKey
+        - CreateLoginProfile
+      excluded_actors:
+        - approved-automation
+    mitre_attack: "T1098 - Account Manipulation"
+    recommendation: "Confirm authorization and inspect the affected identity and permission changes."
+
+  - id: R005
+    name: Sensitive Resource Access
+    severity: HIGH
+    type: sensitive_access
+    condition:
+      event_names:
+        - GetObject
+        - PutObject
+      sensitive_buckets:
+        - finance-sensitive
+        - production-secrets
+      excluded_buckets:
+        - public-demo-assets
+      excluded_actors:
+        - approved-automation
+    mitre_attack: "T1530 - Data from Cloud Storage Object"
+    recommendation: "Verify business need and review access permissions and audit records."

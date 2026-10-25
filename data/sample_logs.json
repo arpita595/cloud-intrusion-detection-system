@@ -1,0 +1,204 @@
+[
+  {
+    "event_id": "BF-1",
+    "eventTime": "2026-10-24T09:00:00Z",
+    "user": "attacker",
+    "eventName": "ConsoleLogin",
+    "sourceIP": "203.0.113.40",
+    "response": "Failure"
+  },
+  {
+    "event_id": "BF-2",
+    "eventTime": "2026-10-24T09:01:00Z",
+    "user": "attacker",
+    "eventName": "ConsoleLogin",
+    "sourceIP": "203.0.113.40",
+    "response": "Failure"
+  },
+  {
+    "event_id": "BF-3",
+    "eventTime": "2026-10-24T09:02:00Z",
+    "user": "attacker",
+    "eventName": "ConsoleLogin",
+    "sourceIP": "203.0.113.40",
+    "response": "Failure"
+  },
+  {
+    "event_id": "BF-4",
+    "eventTime": "2026-10-24T09:03:00Z",
+    "user": "attacker",
+    "eventName": "ConsoleLogin",
+    "sourceIP": "203.0.113.40",
+    "response": "Failure"
+  },
+  {
+    "event_id": "BF-5",
+    "eventTime": "2026-10-24T09:04:00Z",
+    "user": "attacker",
+    "eventName": "ConsoleLogin",
+    "sourceIP": "203.0.113.40",
+    "response": "Failure"
+  },
+  {
+    "event_id": "SLOW-1",
+    "eventTime": "2026-10-24T09:00:00Z",
+    "user": "slow-user",
+    "eventName": "ConsoleLogin",
+    "sourceIP": "10.2.0.8",
+    "response": "Failure"
+  },
+  {
+    "event_id": "SLOW-2",
+    "eventTime": "2026-10-24T09:08:00Z",
+    "user": "slow-user",
+    "eventName": "ConsoleLogin",
+    "sourceIP": "10.2.0.8",
+    "response": "Failure"
+  },
+  {
+    "event_id": "SLOW-3",
+    "eventTime": "2026-10-24T09:16:00Z",
+    "user": "slow-user",
+    "eventName": "ConsoleLogin",
+    "sourceIP": "10.2.0.8",
+    "response": "Failure"
+  },
+  {
+    "event_id": "SLOW-4",
+    "eventTime": "2026-10-24T09:24:00Z",
+    "user": "slow-user",
+    "eventName": "ConsoleLogin",
+    "sourceIP": "10.2.0.8",
+    "response": "Failure"
+  },
+  {
+    "event_id": "SLOW-5",
+    "eventTime": "2026-10-24T09:32:00Z",
+    "user": "slow-user",
+    "eventName": "ConsoleLogin",
+    "sourceIP": "10.2.0.8",
+    "response": "Failure"
+  },
+  {
+    "event_id": "RECON-1",
+    "eventTime": "2026-10-24T09:40:00Z",
+    "user": "recon-user",
+    "eventName": "ListUsers",
+    "sourceIP": "10.3.0.5",
+    "response": "Success"
+  },
+  {
+    "event_id": "RECON-2",
+    "eventTime": "2026-10-24T09:41:00Z",
+    "user": "recon-user",
+    "eventName": "CreateUser",
+    "sourceIP": "10.3.0.5",
+    "response": "Success"
+  },
+  {
+    "event_id": "RECON-3",
+    "eventTime": "2026-10-24T09:42:00Z",
+    "user": "recon-user",
+    "eventName": "AttachUserPolicy",
+    "sourceIP": "10.3.0.5",
+    "response": "Success"
+  },
+  {
+    "event_id": "RECON-4",
+    "eventTime": "2026-10-24T09:43:00Z",
+    "user": "recon-user",
+    "eventName": "CreateAccessKey",
+    "sourceIP": "10.3.0.5",
+    "response": "Success"
+  },
+  {
+    "event_id": "REPEAT-1",
+    "eventTime": "2026-10-24T09:45:00Z",
+    "user": "repeat-user",
+    "eventName": "DescribeInstances",
+    "sourceIP": "10.3.0.6",
+    "response": "Success"
+  },
+  {
+    "event_id": "REPEAT-2",
+    "eventTime": "2026-10-24T09:46:00Z",
+    "user": "repeat-user",
+    "eventName": "DescribeInstances",
+    "sourceIP": "10.3.0.6",
+    "response": "Success"
+  },
+  {
+    "event_id": "REPEAT-3",
+    "eventTime": "2026-10-24T09:47:00Z",
+    "user": "repeat-user",
+    "eventName": "DescribeInstances",
+    "sourceIP": "10.3.0.6",
+    "response": "Success"
+  },
+  {
+    "event_id": "REPEAT-4",
+    "eventTime": "2026-10-24T09:48:00Z",
+    "user": "repeat-user",
+    "eventName": "DescribeInstances",
+    "sourceIP": "10.3.0.6",
+    "response": "Success"
+  },
+  {
+    "event_id": "IP-001",
+    "eventTime": "2026-10-24T09:50:00Z",
+    "user": "remote-user",
+    "eventName": "ConsoleLogin",
+    "sourceIP": "198.51.100.22",
+    "response": "Success"
+  },
+  {
+    "event_id": "IAM-001",
+    "eventTime": "2026-10-24T09:51:00Z",
+    "user": "dev-user",
+    "eventName": "AttachUserPolicy",
+    "sourceIP": "10.1.1.10",
+    "response": "Success"
+  },
+  {
+    "event_id": "IAM-002",
+    "eventTime": "2026-10-24T09:52:00Z",
+    "user": "approved-automation",
+    "eventName": "CreateAccessKey",
+    "sourceIP": "10.1.1.11",
+    "response": "Success"
+  },
+  {
+    "event_id": "DATA-001",
+    "eventTime": "2026-10-24T09:53:00Z",
+    "user": "analyst",
+    "eventName": "GetObject",
+    "sourceIP": "10.1.1.12",
+    "response": "Success",
+    "bucket": "finance-sensitive"
+  },
+  {
+    "event_id": "DATA-002",
+    "eventTime": "2026-10-24T09:54:00Z",
+    "user": "demo-user",
+    "eventName": "GetObject",
+    "sourceIP": "10.1.1.13",
+    "response": "Success",
+    "bucket": "public-demo-assets"
+  },
+  {
+    "event_id": "OK-001",
+    "eventTime": "2026-10-24T09:55:00Z",
+    "user": "alice",
+    "eventName": "ConsoleLogin",
+    "sourceIP": "10.2.2.2",
+    "response": "Success"
+  },
+  {
+    "event_id": "OK-002",
+    "eventTime": "2026-10-24T09:56:00Z",
+    "user": "bob",
+    "eventName": "ListBuckets",
+    "sourceIP": "10.2.2.3",
+    "response": "Success"
+  }
+]
